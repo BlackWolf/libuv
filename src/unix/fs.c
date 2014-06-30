@@ -191,10 +191,10 @@ skip:
 
 
 static ssize_t uv__fs_read(uv_fs_t* req) {
-  if (req->off < 0)
+//  if (req->off < 0)
     return read(req->file, req->buf, req->len);
-  else
-    return pread(req->file, req->buf, req->len, req->off);
+//  else
+//    return pread(req->file, req->buf, req->len, req->off);
 }
 
 
